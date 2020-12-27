@@ -1,0 +1,887 @@
+body{
+	background-color:#000;
+	margin:0;
+	padding: 0;
+}
+/*sticky navbar*/
+.navbar{
+	/*border:1px solid red;*/
+	background-color: #03081a;
+	color:red;
+	height: 8vh;
+	width:100%;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	z-index: 10;
+}
+nav{
+	position: sticky;
+	top: 0;
+}
+
+#musicLogo{
+	width: 4.5rem;
+	height: 4.5rem;
+	margin-top: -0.5rem;
+	margin-left: 1rem;
+}
+.navbar{
+	display: flex;
+	flex-flow: row; 
+}
+.navbar ul{
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row;
+	/*float: right;*/
+}
+#navi{
+	position: absolute;
+	right: 0;
+}
+
+
+.navbar li{
+	list-style: none;
+	font-size: 1.1rem;
+	margin:0rem 4rem 4rem 0rem;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+.navbar li a{
+	text-decoration: none;
+	color:white;
+	/*text-align: center;*/
+}
+.navbar li a:hover{
+	color:#f3501c;
+}
+#navlogo{
+	color:red;
+	font-size: 1.2rem;
+	cursor: default;
+	margin: 3px;
+
+	/*padding-bottom: 2rem;*/
+}
+/*User id login*/
+#userid{
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	top:0;
+	right: 0;
+	transition: all 1.5s;
+	position: fixed;
+}
+#userid:target{
+	height: 50%;
+	width: 30%;
+	background-image: url(microphone.jpg);
+	background-size: cover;
+	top:30%;
+	left: 30%;
+	border-radius: 12px;
+	box-shadow: 0px 0px 4px 2px lightgrey;
+	position: fixed;
+
+}
+#crossblock{
+	height:2rem;
+	width: 2rem;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-bottom-left-radius: 6px;
+}
+#cross{
+	position: absolute;
+	top: 2%;
+	right: 20%;
+	text-decoration: none;
+	color: white;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+form{
+	line-height: 4rem;
+	position: relative;
+	left:15%;
+	color: white;
+	margin-top: 5rem;
+}
+.form-control{
+	width:70%;
+	border:1px solid white;
+	height: 1.5rem;
+	outline: none;
+	letter-spacing: 1.5px;
+	color:white;
+	background:transparent;
+	position: relative;
+	font-size: 1rem;
+	word-spacing: 0.2rem;
+	border-radius: 10px;
+	padding: 5px;
+}
+::placeholder{
+	color:grey;
+	padding: 4px;
+}
+.form-control-button{
+	font-size: 20px;
+	height:2rem;
+	width:10rem;
+	background:transparent;
+	border:2px solid white;
+	color: white;
+	border-radius: 15px;
+	position: relative;
+	left:20%;
+}
+#contact-details button:hover{
+	color:black;
+	background-color:grey;
+	border:none;
+	border-radius: 15px;
+	outline: none;
+
+}
+/*2nd nav*/
+.flex{
+	display: flex;
+}
+.nav2{
+	/*border:1px solid red;*/
+	background-color: #3e3434;
+	height: 10vh;
+	width:78%;
+	border: 1.2px solid black;
+}
+/*search bar*/
+.search_box{
+	width: 45%;
+	/*height: 4rem;*/
+	position: relative;
+	top:0.8rem;
+	left:2rem;
+}
+.search_box input{
+	height: 2rem;
+}
+.search_box input[type="text"]{
+	width: 100%;
+	padding: 20px;
+	padding-right: 60px;
+	box-sizing: border-box;
+	background:rgba(0,0,0,0.3);
+	border:2px solid #3a3737;
+	border-radius: 40px;
+	font-size: 18px;
+	color: #cabdbd;
+	outline: none;
+
+}
+::-webkit-input-placeholder{
+	color: #cabdbd;
+}
+::-moz-placeholder{
+	color:#cabdbd;
+}
+::-ms-input-placeholder{
+	color:#cabdbd;
+}
+.fa-search{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	right: 25px;
+	color: #cabdbd;
+	font-size: 1rem;
+}
+
+/*top trending*/
+#language button{
+	position: absolute;
+	right: 25%;
+	bottom: 30%;
+	width: 10%;
+	height: 2rem;
+	background-color: #06cd9b ;
+	border-radius: 25px;
+	outline: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 2px;
+	color: black;
+}
+
+/* 2nd nav 2nd part*/
+.nav3{
+	
+	background-color:#3e3434;
+	height: 10vh;
+	width:22%;
+	border:1.2px solid black;
+	
+}
+.nav3 h2{
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	position: relative;
+	top: 30%;
+	margin: 3px;
+
+}
+.nav3 a{
+	text-decoration: none;
+	color: #d2c9c9;
+}
+.nav3 a:hover{
+	color:grey;
+}
+/*section1*/
+.sec1{
+	height: 170vh;
+	width: 78%;
+	/*border: 1px solid white;*/
+}
+.section1{
+	height: 36vh;
+	width: 96%;
+	/*border:1px solid white;*/
+	/*border-top: 1px solid #FFFFFFCC;*/
+	margin-top:7%;
+	margin-left: 20px;
+	background-image: linear-gradient(brown , #000)
+
+}
+.poster{
+	width: 15%;
+	height: 65%;
+	/*border: 1px solid red;*/
+	margin: 30px;
+	background-image: url(t8.jpg);
+	border-radius: 10px;
+}
+/*song name*/
+.song_name{
+	width: 60%;
+	height: 65%;
+	/*border: 1px solid red;*/
+	margin-top: 30px;
+	margin-left: 15px;
+}
+.title_name{
+	color: #FFFFFFCC;
+	font-weight: bold;
+	word-spacing: 0.2rem;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0.9px;
+	font-size: 25px;
+}
+h5{
+	color:  #FFFFFFCC;
+	font-weight: bold;
+	word-spacing: 0.1rem;
+	font-family: sans-serif;
+	margin: 1px;
+	padding: 1px;
+	letter-spacing: 0.4px;
+	/*font-size: 25px;*/
+}
+button {
+	color:white;
+	background-color: red;
+	width: 20%;
+	height: 45px;
+	border-style: none;
+	border-radius: 30px;
+	margin-top: 75px;
+	outline: none;
+}
+button .playbutton{
+	font-size: 20px;
+	margin-top: 13px;
+	margin-left: 12px;
+	/*width: 30%;*/
+
+}
+button h3{
+	margin-left: 12px;
+	font-size: 14px;
+	margin-top:13px;
+	font-weight: bold;
+	/*letter-spacing: px;*/
+	font-family: sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.side_sec{
+	width: 10%;
+	height: 65%;
+	/*border: 1px solid red;*/
+	margin-top: 30px;
+	margin-left: 8%;
+}
+.side_sec i{
+	color: #FFFFFFCC;
+	font-size: 25px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+/*heading*/
+.section2{
+	height: 6vh;
+	width: 90%;
+	/*border:1px solid white;*/
+	margin-left: 50px;
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	word-spacing: 0.5rem;
+}
+.section3{
+	height: 55vh;
+	width: 90%;
+	/*border:1px solid white;*/
+	margin-left: 50px;
+
+}
+/*list*/
+.list{
+	color:#FFFFFFE6;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 0.9px;
+	padding: 5px;
+	font-family: sans-serif;
+	text-transform: capitalize;
+	border-bottom: 1px solid grey;
+
+}
+.lista{
+	color:#FFFFFFCC;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.9px;
+	padding: 5px;
+	
+	font-family: sans-serif;
+	text-transform: capitalize;
+	border-bottom: 1px solid grey;
+
+}
+.lista i.time{
+	font-size: 22px;
+	margin: 10px;
+}
+.hash{
+	margin-right: 30px;
+	margin-left: 30px;
+	width: 90px;
+
+}
+.title{
+	margin-right: 30px;
+	width: 400px;
+
+}
+.artist{
+	margin-right: 30px;
+	width: 250px;
+
+}
+.list i.time{
+	font-size: 22px;
+	margin: 10px;
+}
+.list:hover{
+	background-color: #2e2929;
+}
+/* similar songs*/
+.box{
+	padding: 10px;
+	width: 96%;
+	/*border: 1px solid black;*/
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+	border-bottom: 1.5px solid grey;
+	padding-bottom: 50px;
+	border-top: 1.5px solid grey;
+	margin: 20px;
+	margin-right: 20px;
+
+	/*this is the important part*/
+	flex-direction: row; /*by default*/
+	flex-wrap: wrap;
+
+}
+.topArtist{
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #c5afaf;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 5px;
+	position: relative;
+	left:3%;
+	top:0.5%;
+	/*margin-bottom: 1px;*/
+	margin-top: 80px;
+}
+.childs3{
+	border-radius: 5px;
+	cursor: pointer;
+	min-width: 150px;
+	height: 150px; 
+	min-height: 80px;
+	margin: 30px;
+}
+.childs3 > div{
+	margin: 0px;
+}
+
+.childs3:hover .transparent3{
+	background-color: #000000bd;
+	border-radius: 5px;
+	min-width: 150px;
+	height: 150px; 
+	/*display: none;*/
+	/*transition: opacity .5s ease-in-out;*/
+}
+/*.transpaernt:hover{
+	display: block;
+}*/
+
+
+.childs3 .playbutton{
+	position: relative;
+	left: 42%;
+	top:33%;
+	color:white;
+	opacity: 0;
+	font-size: 45px;
+	cursor: pointer;
+}
+.transparent3:hover .playbutton{
+	opacity: 1;
+}
+.childs3:hover{
+	/*opacity: 0.5;*/
+	/*border-radius: 25%;*/
+	transform: scale(0.9);
+}
+
+.radio1{
+	background-image: url(ts6.jpg);
+	background-size: contain;
+
+}
+.radio2{
+	background-image: url(ts7.jpg);
+	background-size: cover;
+
+}
+.radio3{
+	background-image: url(ts8.jpg);
+	background-size: cover;
+}
+.radio4{
+	background-image: url(t3.jpg);
+	background-size: cover;
+}
+.radio5{
+	background-image: url(ts10.jpg);
+	background-size: cover;
+}
+.figcaption{
+	color:#c0b9b9;
+	position: relative;
+	left:22%;
+	margin-top: 15px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+/*section 2*/
+.sec2{
+	height: 170vh;
+	width: 22%;
+	/*border: 1px solid white;*/
+}
+/*hot releases*/
+.queue{
+  height: 4rem;
+  width: 100%;
+  
+}
+#queue{
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  color: white;
+  margin: 20px;
+  text-transform: uppercase;
+  word-spacing: 0.7rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#queue:hover{
+	color: red;
+}
+/*songs*/
+.flex{
+  display: flex;
+  /*text-align: center;*/
+
+}
+.song1{
+  background-image: url(ts1.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song10{
+  background-image: url(ts10.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song11{
+  background-image: url(ts11.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song12{
+  background-image: url(ts12.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song13{
+  background-image: url(ts13.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song14{
+  background-image: url(ts14.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song15{
+  background-image: url(ts15.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song16{
+  background-image: url(ts16.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song17{
+  background-image: url(ts18.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song18{
+  background-image: url(ts19.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song19{
+  background-image: url(ts20.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song20{
+  background-image: url(ts21.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song21{
+  background-image: url(ts22.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song22{
+  background-image: url(ts23.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song23{
+  background-image: url(ts24.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song24{
+  background-image: url(t1.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.song25{
+  background-image: url(t2.jpg);
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  margin: 0.5rem;
+  border-radius: 5px;
+  /*margin-left: 2rem;*/
+}
+.name1{
+  color:lightgrey;
+  font-size: 1rem;
+  margin: 1.1rem;
+  width: 70px;
+  cursor: pointer;
+  /*text-align: center;*/
+}
+.name1:hover{
+	color: grey;
+}
+.heart1{
+  position: relative;
+  left:100px;
+  top:5px;
+  margin: 1rem;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.heart1:hover{
+	color: red;
+}
+/*footer sec*/
+.footer{
+	background-color:black;
+	width: 77%;
+	height: 8vh;
+	position: sticky;
+	bottom: 0;
+}
+.footer i{
+	
+	color: grey;
+	font-size: 25px;
+	margin:5px;
+	margin-left: 70px;
+
+}
+.footer i{
+	position: relative;
+	left:30%;
+	top:5px;
+}
+.footer h3{
+	color: white;
+	font-size: 20px;
+	word-spacing: 0.5rem;
+	position: relative;
+	left:20%;
+	top:1px;
+	
+}
+#playphoto{
+	background-image: url(ts6.jpg);
+	height: 35px;
+	width: 35px;
+	background-size: contain;
+	position: relative;
+	left:15%;
+	top:10px;
+}
+@media screen and (max-width: 1200px){
+	.poster{
+		width: 120px;
+		height: 120px;
+		background-size: contain;
+	}
+	button{
+		width: 30%;
+	}
+	.footer i{
+	position: relative;
+	left:20%;
+	top:5px;
+	}
+	.footer{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 900px){
+	.poster{
+		width: 100px;
+		height: 100px;
+		background-size: contain;
+	}
+	.sec2{
+		width: 0;
+		overflow: hidden;
+	}
+	.sec1{
+		width: 100%;
+	}
+	/*button h3{
+		font-size: 10px;
+		margin-left: 0;
+	}*/
+	button{
+		width: 40%;
+	}
+	.side_sec{
+		margin-left: 2%;
+	}
+	.section1{
+		/*width: 95%;*/
+	}
+	.song_name{
+		width: 40%;
+	}
+	.footer i{
+	
+	color: grey;
+	font-size: 25px;
+	margin:5px;
+	margin-left: 40px;
+
+	}
+	.footer i{
+	position: relative;
+	left:20%;
+	top:5px;
+	}
+	.footer h3{
+	color: white;
+	font-size: 13px;
+	word-spacing: 0.5rem;
+	position: relative;
+	left:20%;
+	top:1px;
+	
+	}
+	#playphoto{
+	background-image: url(ts6.jpg);
+	height: 25px;
+	width: 25px;
+	background-size: contain;
+	position: relative;
+	left:15%;
+	top:10px;
+	}
+}
+@media screen and (max-width: 700px){
+	button h3{
+		font-size: 12px;
+		margin-left: 2px;
+	}
+	.footer i{
+	
+	color: grey;
+	font-size: 25px;
+	margin:5px;
+	margin-left: 40px;
+
+	}
+	.footer i{
+	position: relative;
+	left:10%;
+	top:5px;
+	}
+	.footer{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.poster{
+		width: 80px;
+		height: 80px;
+		background-size: contain;
+	}
+	.side_sec{
+		margin-left: 2%;
+	}
+	.song_name{
+		width: 30%;
+	}
+	.title_name{
+		/*font-size: 20px;*/
+	}
+	button{
+		margin-top: 30px;
+	}
+}
